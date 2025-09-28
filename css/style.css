@@ -27,6 +27,12 @@ h2 {
     margin-top: 0;
 }
 
+header picture img {
+    width: 100%;       /* make image full width of container */
+    height: auto;      /* maintain aspect ratio */
+    display: block;    /* remove any inline spacing */
+}
+
 .image-gallery {    /* Container for the horizontal scrollable gallery */
     display: flex;  /* Arrange child items in a row */
     overflow-x: auto;   /* Enable horizontal scrolling if content overflows */
