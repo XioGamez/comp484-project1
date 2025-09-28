@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - My Book Review</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+    <body>
+        <header role="banner">
+            <h1>My Opinions Are Right: Book Review</h1>
+            <nav role="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="booklist.html">Red Rising Saga</a></li>
+                    <li><a href="about.html">Plot</a></li>
+                    <li><a href="review.html">Review</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <h2>What's Your Take</h2>
+        </header>
+        <main role="main">
+            <section>
+                <!-- required is used to make sure that something is entered into form. Forces user to provide certain information -->
+                <!-- pattern is used to validate the format of user input with a regular expression -->
+                <form>
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required pattern="[A-Za-z\s]{2,30}" placeholder="Name"><br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="example@email.com"><br><br>
+
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" cols="50" required placeholder="Let's debate"></textarea><br><br>
+
+                    <button type="submit">Send</button>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>
