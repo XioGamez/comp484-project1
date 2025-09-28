@@ -16,6 +16,11 @@
                     <li><a href="review.html">Review</a></li>
                 </ul>
             </nav>
+            <!-- element allows browsers to show the best-sized image for each device (computer, tablet, phone), improving loading, and accessibility with <img> fallback (<source> not supported) -->
+            <picture>
+                <source srcset="img/books.jpg" media="(min-width: 500px)">
+                <img src="img/books-small.jpg" alt="Books Banner">
+            </picture>
         </header>
         <main role="main">
             <section>
