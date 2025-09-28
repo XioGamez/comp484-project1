@@ -6,23 +6,97 @@ html, body {
 
 body {
     font-family: "Times New Roman", Times, serif;
-    background: #f5f5f5;   /* soft neutral background */
+    background: #f5f5f5;
     color: #333;
     line-height: 1.7;
     padding: 2rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
     font-weight: normal;
 }
 
 h1 {
     font-size: 1.5rem;
+    margin-bottom: 0.5rem;
 }
 
 h2 {
-    font-size: 2.0rem;
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+.image-gallery {    /* Container for the horizontal scrollable gallery */
+    display: flex;  /* Arrange child items in a row */
+    overflow-x: auto;   /* Enable horizontal scrolling if content overflows */
+    gap: 10px;  /* Space between each image item */
+    padding: 10px;  /* Space inside the gallery container */
+    scroll-snap-type: x mandatory;  /* Snap scrolling to each child horizontally */
+}
+
+.image-item {   /* Each individual image card/item */
+    flex: 0 0 auto; /* Prevent items from shrinking or growing; keep fixed width */
+    width: 150px;   /* Set a fixed width for each item */
+    text-align: center; /* Center text and content inside the item */
+    scroll-snap-align: center;  /* Snap this item to the center when scrolling */
+    border: 1px solid #ccc; /* Light gray border around the card */
+    padding: 5px;   /* Inner spacing inside each card */
+    background-color: #fff; /* White background for each card */
+}
+
+.image-item img {   /* Images inside each card */
+    width: 100%;    /* Image fills the width of the card */
+    height: auto;   /* Maintain the original aspect ratio */
+}
+
+.description {  /* Description text below each image */
+    margin-top: 5px;    /* Space above the description text */
+    font-size: 0.8rem;  /* Smaller font size for captions */
+    color: #555;    /* Medium gray color for readability */
+}
+
+.book-info {
+    display: flex;  /* align image and text horizontally */
+    align-items: center;    /* vertically center text with image */
+    gap: 15px;  /* space between image and text */
+    margin: 1rem 0;
+}
+
+.book-text {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1rem;
+    color: #333;
+}
+
+table.table {   /* Style for all tables with class="table" */
+    border-collapse: collapse;  /* remove spacing between borders */
+    width: 90%; /* make table take 90% of page width */
+    margin: 20px auto;  /* add margin top/bottom and center horizontally */
+    font-family: "Georgia", serif;  /* set elegant serif font */
+    font-size: 16px;    /* base text size inside the table */
+    color: #333;    /* dark gray text color */
+}
+
+.table th, .table td {  /* Style for table cells (td) and headers (th) */
+    border-bottom: 1px solid #ddd;  /* light gray divider between rows */
+    padding: 12px;  /* space inside cells */
+    text-align: left;   /* align text to the left */
+    vertical-align: middle; /* vertically center text/images */
+}
+
+.table th { /* Style for header cells only */
+    background-color: #f5f5f5;  /* light gray background for header row */
+    font-weight: bold;  /* make header text bold */
+}
+
+.table img {    /* Style for book cover images inside the table */
+    border: 1px solid #ccc; /* thin border around images */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);    /* subtle shadow for depth */
+}
+
+.table tr:hover {   /* Add hover effect for table rows */
+    background-color: #fafafa;  /* highlight row when hovering over it */
 }
 
 footer {
