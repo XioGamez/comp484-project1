@@ -1,3 +1,5 @@
+Website: https://xiogamez.github.io/comp484-project1/
+
 Elements
 - picture can be found in index.html
 - embed can be found in index.html
