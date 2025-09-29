@@ -4,7 +4,7 @@ Elements
 - wbr wasn't able to use
   Purpose: tells browser where it's allowed to break a long word or URL if it doesn't fit. Doesn't force the break, but provides "hint" for line wrapping
   This prevents having to scroll horizontally or have overflow on small screens.
-  It imporves readability for long names, book titles, or URLs.
+  It improves readability for long names, book titles, or URLs.
   Keeps layout neat.
 
   On any single page I didn't see the need to use it and didn't feel like throwing it in without purpose. There aren't and long words or URLs in my website that would need it. 
