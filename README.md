@@ -1,7 +1,7 @@
 Elements
-- <picture> can be found in index.html
-- <embed> can be found in index.html
-- <wbr> wasn't able to use
+- picture can be found in index.html
+- embed can be found in index.html
+- wbr wasn't able to use
   Purpose: tells browser where it's allowed to break a long word or URL if it doesn't fit. Doesn't force the break, but provides "hint" for line wrapping
   This prevents having to scroll horizontally or have overflow on small screens.
   It imporves readability for long names, book titles, or URLs.
